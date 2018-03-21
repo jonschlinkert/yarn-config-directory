@@ -27,6 +27,8 @@
     "mocha": "^3.5.3"
   },
   "keywords": [
+    "config",
+    "directory",
     "global",
     "path",
     "yarn"
