@@ -4,7 +4,7 @@ const path = require('path');
 const homedir = require('homedir-polyfill');
 
 module.exports = function yarnPrefix() {
-  const userhome = homedir();
+  let userhome = homedir();
 
   if (process.platform === 'linux' && process.env.USER === 'root') {
     userhome = path.resolve('/usr/local/share');
